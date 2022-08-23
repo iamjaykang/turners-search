@@ -1,6 +1,6 @@
 # Turners Search
 
-Searches through the turners domain using Azure Bing Custom Search API that replaces all punctuation with a space character entered in the input
+Searches through the Turners domain using Azure Bing Custom Search API that replaces all punctuation with a space character entered in the input
 
 <img src="https://i.ibb.co/Gcxxvnc/Screen-Shot-2022-08-23-at-4-57-49-PM.png" alt="turners-search" border="0">
 
