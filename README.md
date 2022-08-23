@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Turners Search
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Searches through the turners domain using Azure Bing Custom Search API that replaces all punctuation with a space character entered in the input
+
+<img src="https://i.ibb.co/Gcxxvnc/Screen-Shot-2022-08-23-at-4-57-49-PM.png" alt="turners-search" border="0">
 
 ## Available Scripts
 
