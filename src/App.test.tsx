@@ -1,4 +1,4 @@
-import replacePunctuation from './replacePunctuation';
+import stringFilter from './stringFilter.ts';
 
 import { render, screen } from '@testing-library/react';
 import App from './App';
@@ -26,7 +26,7 @@ describe('Filter string tests', () => {
 
   testStrings.map(testStr => {
     it(`Return ${expected} when string is ${testStr}`, () => {
-      const actual: string = replacePunctuation(testStr)
+      const actual: string = stringFilter(testStr)
 
       expect(actual).toBe(expected)
     })
