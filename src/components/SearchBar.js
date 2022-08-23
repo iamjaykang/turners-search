@@ -1,13 +1,10 @@
-import React from "react";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
-function Searchbar(props) {
-  const { 
-    onSearch 
-  } = props;
+import replacePunctuation from '../stringFilter.ts'
 
+function Searchbar({ onSearch }) {
   const [searchText, setSearchText] = useState('')
 
   const handleInput = (e) => {
@@ -17,13 +14,15 @@ function Searchbar(props) {
 
   const handleEnterKeyPressed = (e) => {
     if(e.key=== 'Enter') {
-      onSearch(searchText)
+      const filteredSearchText = replacePunctuation(searchText)
+      onSearch(filteredSearchText)
     }
   }
 
   const handleClick = () => {
-    onSearch(searchText)
-  };
+    const filteredSearchText = replacePunctuation(searchText)
+    onSearch(filteredSearchText)
+  }
 
   return (
     <div>
