@@ -1,0 +1,100 @@
+body {
+  color: #000;
+}
+
+.searchApp input.input {
+    font: inherit;
+    font-size: 16px;
+    color: #222;
+    background-color: transparent;
+    width: calc(100% - 71px);
+    margin: 4px 4px 0 16px;
+    border: 0;
+    padding: 0 10px 0 0;
+    max-height: 30px;
+    outline: 0;
+    box-sizing: content-box;
+    vertical-align: top;
+    height: 35px;
+}
+.searchApp .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.searchApp .card p {
+  margin: 10px 0px;
+}
+
+.searchApp .resultCard {
+  margin: 15px;
+  display: inline-block;
+  text-align: left;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.searchApp .result {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bcs-caption {
+  display: table;
+  line-height: 17px;
+}
+
+.caption-image {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.caption-image img {
+  max-width: 128px;
+  max-height: 80px;
+  margin-right: 10px;
+  padding-top: 2px;
+}
+
+.caption-text {
+  display: table-cell;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.caption-text p {
+  margin: 0;
+  padding: 0;
+}
+
+cite {
+  color: #006d21;
+  font-style: normal;
+  word-wrap: break-word;
+}
+
+.searchbox {
+  border-color: #cdcdcd;
+  border-width: 1px;
+  border-style: solid;
+  font: 18px/normal 'Segoe UI',Arial,Helvetica,Sans-Serif;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.container.searchApp {
+  margin-top: 100px;
+}
+
+svg.svg-inline--fa.fa-magnifying-glass.searchbox-submit {
+  background-size: 25px 25px;
+  background-position: center;
+  width: 25px;
+  height: 34px;
+  color: #0076be;
+  border-width: 0;
+  cursor: pointer;
+}
