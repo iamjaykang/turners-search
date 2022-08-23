@@ -14,7 +14,8 @@ function Searchbar({ onSearch }) {
 
   const handleEnterKeyPressed = (e) => {
     if(e.key=== 'Enter') {
-      onSearch(searchText)
+      const filteredSearchText = replacePunctuation(searchText)
+      onSearch(filteredSearchText)
     }
   }
 
